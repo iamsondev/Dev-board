@@ -1,14 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev-board</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-  <section>
-      
+
+<body class="bg-slate-200">
+  <section class="max-w-[1300px] mx-auto">
+    <nav class="flex justify-between bg-white mt-5 py-2 px-5">
+      <!-- logo part -->
+      <div class="flex">
+        <img src="./assets/logo.png" alt="">
+        <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>
+      </div>
+      <!-- checkbox-part -->
+      <div class="flex justify-between gap-16">
+        <div class="flex gap-2 bg-slate-300 rounded-3xl w-24 py-2">
+          <img class="w-5 h-5 mt-3" src="./assets/checkbox.png" alt="">
+          <h2 class="text-3xl font-bold">23</h2>
+        </div>
+        <button><img src="./assets/theme-btn.png" alt=""></button>
+      </div>
+
+    </nav>
+    <!-- main section start  -->
+    <section class="mt-7">
+      <!-- discover section -->
+      <section class="bg-white ">
+        <!-- discover box -->
+        <div class="discover-box flex justify-between px-5">
+          <!-- task -->
+          <div class="flex gap-4 bg-slate-200 w-56 m-2 p-1 rounded-2xl">
+            <img class="w-6 h-6 mt-3 bg-white rounded-full" src="./assets/checkbox.png" alt="">
+            <div>
+              <h3>Task assigned</h3>
+              <h3 class="text-2xl font-bold">05</h3>
+            </div>
+          </div>
+          <!-- discover -->
+          <div class="flex justify-center items-center gap-20 w-2/4 rounded-2xl bg-blue-600 py-1">
+            <img class="w-16" src="./assets/board.png" alt="">
+            <p class="text-white">Discover something <br> new today!</p>
+          </div>
+          <!-- date -->
+          <div class="flex  bg-slate-200 w-56 m-2 p-1 rounded-2xl">
+            <img class="w-6 h-6 bg-white rounded-full" src="./assets/calender.png" alt="">
+            <p>Tue Feb25 2025</p>
+          </div>
+        </div>
+        <!-- cards section -->
+        <div class="grid grid-cols-3 gap-2">
+          <!-- card-1 -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+          <!-- card-2  -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="w-80 bg-slate-100 m-3 p-5 rounded-md">
+            <div>
+              <h3 class="text-xl w-28 bg-white rounded-lg mb-2">ShopEase</h3>
+            </div>
+            <div>
+              <p class="text-xl font-semibold mb-2">Fix Mobile Button Issue </p>
+            </div>
+            <div>
+              <p class="w-72 bg-white p-3 rounded-md mb-3">Debug using Chrome DevTools,<br> check for overlapping </p>
+            </div>
+            <div class="flex gap-6">
+              <div>
+                <div>
+                  <p>Deadline</p>
+                </div>
+                <div>
+                  <p>21 March 2025</p>
+                </div>
+              </div>
+              <div><button class="w-28 ml-12 bg-blue-600 text-white rounded-md py-2">Completed</button></div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- activity log section ----slide bar-->
+      <section></section>
+    </section>
+
   </section>
-  
+
 </body>
+
 </html>
