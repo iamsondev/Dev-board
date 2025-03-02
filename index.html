@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev-board</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+        #fonts {
+  font-family: "Poppins", sans-serif;
+}
+  </style>
 </head>
 
-<body class="bg-slate-200">
-  <section class="max-w-[1300px] mx-auto">
-    <nav class="flex justify-between bg-white mt-5 py-2 px-5">
+<body id="fonts" class="bg-slate-200">
+  <section class="max-w-[1370px] mx-auto">
+    <nav class="flex justify-between bg-white mt-5 py-5 px-5 rounded-lg">
       <!-- logo part -->
       <div class="flex gap-3 mt-2">
         <img class="w-8 h-8" src="./assets/logo.png" alt="">
@@ -19,11 +26,11 @@
       </div>
       <!-- checkbox-part -->
       <div class="flex justify-between gap-16">
-        <div class="flex gap-2 bg-slate-300 rounded-3xl w-24 py-2">
-          <img class="w-5 h-5 mt-3" src="./assets/checkbox.png" alt="">
-          <h2 class="text-3xl font-bold">23</h2>
+        <div class="flex gap-2 bg-slate-300 rounded-3xl w-24">
+          <img class="w-5 h-5 ml-3 mt-3" src="./assets/checkbox.png" alt="">
+          <h2 class="text-2xl font-bold mt-1">23</h2>
         </div>
-        <button><img src="./assets/theme-btn.png" alt=""></button>
+          <div><button id="random-color"><img src="./assets/theme-btn.png" alt=""></button></div>
       </div>
 
     </nav>
@@ -34,21 +41,21 @@
         <!-- discover box -->
         <div class="discover-box flex justify-between px-5">
           <!-- task -->
-          <div class="flex gap-4 bg-slate-200 w-56 m-2 p-1 rounded-2xl">
+          <div class="flex justify-center items-center gap-4 bg-slate-200 w-60 h-28 m-2 p-1 rounded-2xl">
             <img class="w-6 h-6 mt-3 bg-white rounded-full" src="./assets/checkbox.png" alt="">
             <div>
               <h3>Task assigned</h3>
-              <h3 class="text-2xl font-bold">05</h3>
+              <h3 class="text-2xl font-bold">06</h3>
             </div>
           </div>
           <!-- discover -->
-          <div class="flex justify-center items-center gap-20 w-96 rounded-2xl bg-blue-600 py-1">
+          <div id="click-discover" class="flex justify-center items-center gap-20 w-96 h-28 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-300 mt-2">
             <img class="w-16" src="./assets/board.png" alt="">
             <p class="text-white">Discover something <br> new today!</p>
           </div>
           <!-- date -->
-          <div class="flex  bg-slate-200 w-56 m-2 p-1 rounded-2xl">
-            <img class="w-6 h-6 bg-white rounded-full" src="./assets/calender.png" alt="">
+          <div class="flex justify-center items-center gap-3  bg-slate-200 w-60 h-28  m-2 p-1 rounded-2xl">
+             <div class="w-10 h-10 bg-white rounded-full"><img class="w-8 h-8" src="./assets/calender.png" alt=""></div>
             <p>Tue Feb25 2025</p>
           </div>
         </div>
@@ -210,7 +217,7 @@
     </section>
 
   </section>
-
+ <script src="./script/discover.js"></script>
 </body>
 
 </html>
