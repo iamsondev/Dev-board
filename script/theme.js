@@ -20,4 +20,3 @@ document.getElementById('random-color').addEventListener('click', function () {
   window.addEventListener("load", changeBgColor());
 })
 
-

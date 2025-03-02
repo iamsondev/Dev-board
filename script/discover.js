@@ -1,10 +1,9 @@
-document.getElementById('click-discover').addEventListener('click', function(event){
+document.getElementById('click-discover').addEventListener('click', function (event) {
   event.preventDefault();
-  window.location.href ="./discover.html";
+  window.location.href = "./discover.html";
 })
 
-document.getElementById('back-button').addEventListener('click', function(event){
+document.getElementById('back-button').addEventListener('click', function (event) {
   event.preventDefault();
-  window.location.href ="./index.html";
+  window.location.href = "./index.html";
 })
-
